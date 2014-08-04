@@ -2112,3 +2112,23 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   })
 
 }(jQuery);
+
+<!-- CUSTOM -->
+
+$('#InfroTextSubmit').click(function(){
+
+    if ($('#modalTitle').val()==="") {
+        // invalid
+        $('#title').next('.help-inline').show();
+        return false;
+    }
+    else {
+        // submit the form here
+        // $('#InfroText').submit();
+
+        return true;
+    }
+
+
+
+});
